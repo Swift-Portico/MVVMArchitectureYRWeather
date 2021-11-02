@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A62FA3927317CA300804B97 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A62FA3827317CA300804B97 /* Protocols.swift */; };
 		6A741A04270E8E8F00F8C798 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A741A03270E8E8F00F8C798 /* AppDelegate.swift */; };
 		6A741A06270E8E8F00F8C798 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A741A05270E8E8F00F8C798 /* SceneDelegate.swift */; };
 		6A741A0D270E8E9100F8C798 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A741A0C270E8E9100F8C798 /* Assets.xcassets */; };
@@ -19,11 +20,12 @@
 		6AF4DE0A270E8F4B00FEC9C6 /* WeatherForecastModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4DE09270E8F4B00FEC9C6 /* WeatherForecastModel.swift */; };
 		6AF4DE0C270E8F5400FEC9C6 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4DE0B270E8F5400FEC9C6 /* AlertService.swift */; };
 		6AF4DE0E270E8F5F00FEC9C6 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4DE0D270E8F5F00FEC9C6 /* OverlayView.swift */; };
-		6AF4DE10270E8F6400FEC9C6 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4DE0F270E8F6400FEC9C6 /* Enum.swift */; };
+		6AF4DE10270E8F6400FEC9C6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4DE0F270E8F6400FEC9C6 /* Constants.swift */; };
 		6AF4DE12270E8F6A00FEC9C6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4DE11270E8F6A00FEC9C6 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A62FA3827317CA300804B97 /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		6A741A00270E8E8E00F8C798 /* YRWeatherAppDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YRWeatherAppDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A741A03270E8E8F00F8C798 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A741A05270E8E8F00F8C798 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,7 +40,7 @@
 		6AF4DE09270E8F4B00FEC9C6 /* WeatherForecastModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherForecastModel.swift; sourceTree = "<group>"; };
 		6AF4DE0B270E8F5400FEC9C6 /* AlertService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 		6AF4DE0D270E8F5F00FEC9C6 /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
-		6AF4DE0F270E8F6400FEC9C6 /* Enum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
+		6AF4DE0F270E8F6400FEC9C6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		6AF4DE11270E8F6A00FEC9C6 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,9 +125,10 @@
 			isa = PBXGroup;
 			children = (
 				6AF4DE11270E8F6A00FEC9C6 /* Extensions.swift */,
-				6AF4DE0F270E8F6400FEC9C6 /* Enum.swift */,
+				6AF4DE0F270E8F6400FEC9C6 /* Constants.swift */,
 				6AF4DE0D270E8F5F00FEC9C6 /* OverlayView.swift */,
 				6AF4DE0B270E8F5400FEC9C6 /* AlertService.swift */,
+				6A62FA3827317CA300804B97 /* Protocols.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -228,7 +231,8 @@
 				6AF4DE06270E8F3800FEC9C6 /* WeatherViewController.swift in Sources */,
 				6A741A04270E8E8F00F8C798 /* AppDelegate.swift in Sources */,
 				6AF4DE08270E8F4200FEC9C6 /* WeatherViewModel.swift in Sources */,
-				6AF4DE10270E8F6400FEC9C6 /* Enum.swift in Sources */,
+				6A62FA3927317CA300804B97 /* Protocols.swift in Sources */,
+				6AF4DE10270E8F6400FEC9C6 /* Constants.swift in Sources */,
 				6AF4DE03270E8F3100FEC9C6 /* WeatherDisplayTableviewCell.swift in Sources */,
 				6AF4DE0A270E8F4B00FEC9C6 /* WeatherForecastModel.swift in Sources */,
 				6AF4DE12270E8F6A00FEC9C6 /* Extensions.swift in Sources */,

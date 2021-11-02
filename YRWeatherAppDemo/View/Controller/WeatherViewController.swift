@@ -20,7 +20,6 @@ class WeatherViewController: UIViewController {
     private var cancellables = Set<AnyCancellable>()
     private let locationManager = CLLocationManager()
     private var weatherViewModel = WeatherViewModel()
-    private static let cellIdentifier = "WeatherDisplayCellID"
     
     //MARK: - LifeCycle
     
@@ -94,7 +93,7 @@ extension WeatherViewController {
     
     fileprivate func initializeDataSource() {
         weatherViewModel.dataSource = WeatherAPIDataSource(tableView: self.weatherDisplayTableView, cellProvider: { (tableView, indexPath, model) -> UITableViewCell? in
-            guard let weatherCell = tableView.dequeueReusableCell(withIdentifier: WeatherViewController.cellIdentifier, for: indexPath) as? WeatherDisplayTableviewCell else { return WeatherDisplayTableviewCell() }
+            let weatherCell: WeatherDisplayTableviewCell  = tableView.dequeueReusableCell(forIndexPath: indexPath)
             guard let hours = model.data?.next_12_hours, let symbolCode = hours.summary?.symbol_code else { return WeatherDisplayTableviewCell() }
             weatherCell.populateData(metaData: model.data, with: WeatherIconOptions.init(rawValue: symbolCode) ?? WeatherIconOptions.rain)
             return weatherCell
@@ -106,10 +105,10 @@ extension WeatherViewController {
 
 extension WeatherViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        64
+        return UITableView.automaticDimension
     }
     
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        64
+        return UITableView.automaticDimension
     }
 }
